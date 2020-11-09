@@ -1,0 +1,273 @@
+body{
+    --roboto: 'Roboto', sans-serif;
+    --daysone: 'Days One', sans-serif;
+}
+*{ margin: 0; padding: 0;}
+
+header{
+    height: 100vh;
+    background: url(../images/bg-header.jpg) no-repeat;
+    background-size: cover;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 21px;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+header li{
+    margin-left: 40px;
+}
+
+header a{
+    font-family: var(--roboto);
+    color: #1b191e;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 500ms;
+}
+
+header a:hover{
+    color: #2b6ccd;
+
+}
+#products{
+    padding-top: 15px;
+}
+#products .carts{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+#products .carts .item{
+margin: 15px;
+position: relative;
+}    
+
+h2{
+    font-family: var(--roboto);
+    font-size: 30px;
+    color: #2b6ccd;
+    margin: 85px 0px;
+}
+
+#products .carts .item .desc{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    padding: 26px;
+    box-sizing: border-box
+}
+
+#products .carts .item .desc .price{
+    display: flex;
+    justify-content: space-between;
+}
+
+#products h3{
+    font-family: var(--roboto);
+    font-size:20px;
+    font-weight: 600;
+    color: #2b6ccd;
+    margin-bottom: 10px
+}
+
+#products .desc p{
+    font-family: var(--roboto);
+    font-size: 16px;
+    color: #2d2d2d;
+}
+
+#about{
+    margin-top: 85px;
+    border-top: 1px #dadada solid;
+    border-bottom: 1px #dadada solid;
+}
+
+#about h3{
+    color: #2b6ccd;
+    font-family: var(--daysone);
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 40px
+}
+
+#about p{
+    max-width: 430px;
+    font-family: var(--roboto);
+    color: #676767 ;
+    font-size: 18px
+
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#best_product p{
+    max-width: 440px;
+    font-family: var(--roboto);
+    color: #484848;
+
+}
+
+#best_product .desc{
+    margin-left: 30px;
+}
+
+#best_product .content{
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#best_product h3{
+    color: #2b6ccd;
+    font-size: 30px;
+    font-family: var(--roboto);
+    font-weight: 600;
+    margin-bottom: 55px;
+}
+
+#best_product .desc a{
+    padding: 17px 60px;
+    border: 1px #2b6ccd solid;
+    display: inline-block;
+    margin-top: 75px;
+    font-family: var(--roboto);
+    font-weight: 100;
+    color: #2b6ccd;
+    text-decoration: none;
+}
+
+#contact{
+    background: #f8f8f8;
+}
+
+#contact h2{
+    margin-bottom: 60px;
+}
+
+#contact .content{
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#contact .form{
+    flex-grow: 1;
+}
+
+#contact .info{
+    padding-left: 30px;
+    flex-grow: 1;
+}
+
+#contact form{
+    max-width: 350px;
+}
+
+#contact input, textarea{
+    background: none;
+    border: none;
+    padding: 8px;
+    box-sizing: border-box;
+    resize: none;
+    width: 100%;
+    font-family: var(--roboto);
+    font-size: 16px;
+}
+
+#contact input{
+    margin-bottom: 10px;
+    border-bottom: #484848 solid 1px; 
+    color: #484848;
+}
+
+#contact textarea{
+    height: 130px;
+    border: 1px solid #484848;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#contact button{
+    width: 100%;
+    background: #2b6ccd;
+    color: white;
+    font-family: var(--roboto);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 13px 0px;
+}
+
+#contact .info li{
+    list-style: none;
+    margin-bottom: 35px;
+}
+
+#contact h4, p{
+    color: #484848;
+    font-family: var(--roboto);
+    font-weight: 600;
+    font-size: 16px
+}
+
+#contact p{
+    margin-top: 5px;
+    font-weight: 400;
+}
+
+footer{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+footer .content{
+    align-items: flex-start
+}
+
+footer li{
+    list-style: none;
+}
+
+footer a{
+    font-family: var(--roboto) ;
+    font-size: 18px;
+    text-decoration: none;
+    color: #242424;
+    display: inline-block;
+    padding: 10px 0px;
+    transition: 500ms
+}
+
+footer a:hover{
+    color: #2b6ccd;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 55px;
+    font-family: var(--roboto);
+    font-size: 18px;
+    font-weight: 400;
+    color: #232323;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
